@@ -1,0 +1,25 @@
+body {
+    padding: 1em;
+}
+
+#pieces {
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+#tableMain tr td {
+    /* border-color: #ddd;
+    border-width: 1px;
+    border-left-style: solid;
+    border-bottom-style: solid; */
+    background-color: #ddd;
+    display: block;
+}
+
+#tableMain {
+    /* border-color: #ddd;
+    border-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid; */
+    display: inline-flex;
+}

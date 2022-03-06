@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Puzzle game</title>
+</head>
+
+<body onload="bodyOnload()">
+    <div class="row container">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="imgInp">Choose file</label>
+                </div>
+                <div class="custom-file">
+                    <input type="file" id="imgInp">
+                    <label class="custom-file-label" for="imgInp" id="fileName">File name</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="row">Row</label>
+                </div>
+                <input type="number" min="1" id="row" value="2" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="column">Column</label>
+                </div>
+                <input type="number" min="1" id="column" value="2" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary" onclick="start()">Start</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3" id="pieces" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+
+        <div class="col-md-6">
+            <table id="tableMain"></table>
+        </div>
+
+        <div class="col-md-3">
+            <img id="blah" src="anh-hoat-hinh-31.jpg" alt="your image" class="img-fluid" loading="lazy" />
+            <img id="blah_real" src="anh-hoat-hinh-31.jpg" alt="your image" class="d-none" loading="lazy" />
+        </div>
+    </div>
+</body>
+
+</html>
