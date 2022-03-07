@@ -12,7 +12,7 @@
 
 <body onload="bodyOnload()">
     <div class="row container">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="imgInp">Choose file</label>
@@ -44,19 +44,30 @@
         <div class="col-md-2">
             <button type="button" class="btn btn-primary" onclick="start()">Start</button>
         </div>
+
+        <div class="col-md-2">
+            <h4 id="element_time">00:00</h4>
+        </div>
     </div>
     <div class="row">
-        <div class="col-md-3" id="pieces" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="col-md-4" id="pieces" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
 
-        <div class="col-md-6">
-            <table id="tableMain"></table>
+        <div class="col-md-4" id="tableMain">
         </div>
 
-        <div class="col-md-3">
-            <img id="blah" src="anh-hoat-hinh-31.jpg" alt="your image" class="img-fluid" loading="lazy" />
-            <img id="blah_real" src="anh-hoat-hinh-31.jpg" alt="your image" class="d-none" loading="lazy" />
+        <div class="col-md-4">
+            <img id="blah" src="pig.jpg" alt="your image" class="img-fluid" loading="lazy" />
+            <img id="blah_real" src="pig.jpg" alt="your image" class="d-none" loading="lazy" />
         </div>
+    </div>
+
+    <div id="you_win" class="d-none">
+        <h1>YOU WIN.</h1>
+    </div>
+
+    <div id="not_exactly" class="d-none">
+        <h1>Not exactly!</h1>
     </div>
 </body>
 
