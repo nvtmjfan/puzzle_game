@@ -154,3 +154,8 @@ function checkResult() {
     you_win.setAttribute('class', '');
     you_win.style.display = 'block';
 }
+
+function changeImage(event) {
+    blah.src = event.target.value;
+    blah_real.src = event.target.value;
+}

@@ -11,8 +11,8 @@
 </head>
 
 <body onload="bodyOnload()">
-    <div class="row container">
-        <div class="col-md-4">
+    <div class="row">
+        <div class="col-md-3">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="imgInp">Choose file</label>
@@ -23,30 +23,37 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="row">Row</label>
                 </div>
-                <input type="number" min="1" id="row" value="2" class="form-control">
+                <input type="number" min="1" id="row" value="5" class="form-control">
             </div>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-1">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="column">Column</label>
                 </div>
-                <input type="number" min="1" id="column" value="2" class="form-control">
+                <input type="number" min="1" id="column" value="5" class="form-control">
             </div>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-1">
             <button type="button" class="btn btn-primary" onclick="start()">Start</button>
         </div>
 
         <div class="col-md-2">
             <h4 id="element_time">00:00</h4>
+        </div>
+
+        <div class="col-md-2">
+            <select class="form-control" onchange="changeImage(event)">
+                <option value="pig.jpg">Pig</option>
+                <option value="girl.jpg">Girl</option>
+            </select>
         </div>
     </div>
     <div class="row">
