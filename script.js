@@ -17,6 +17,7 @@ function bodyOnload() {
             blah.src = url;
             blah_real.src = url;
             fileName.innerHTML = file.name;
+            selectImage.value = null;
         }
     }
 }
@@ -91,6 +92,7 @@ function start() {
     seconds = 0;
     minutes = 0;
     hours = 0;
+    clearInterval(timer);
     timer = setInterval(() => {
         seconds_100++;
         if (seconds_100 == 100) {
@@ -158,4 +160,5 @@ function checkResult() {
 function changeImage(event) {
     blah.src = event.target.value;
     blah_real.src = event.target.value;
+    fileName.innerHTML = null;
 }

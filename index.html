@@ -15,7 +15,7 @@
         <div class="col-md-3">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <label class="input-group-text" for="imgInp">Choose file</label>
+                    <label class="input-group-text" for="imgInp">Choose an image file</label>
                 </div>
                 <div class="custom-file">
                     <input type="file" id="imgInp">
@@ -50,9 +50,12 @@
         </div>
 
         <div class="col-md-2">
-            <select class="form-control" onchange="changeImage(event)">
+            <select id="selectImage" class="form-control" onchange="changeImage(event)">
                 <option value="pig.jpg">Pig</option>
                 <option value="girl.jpg">Girl</option>
+                <option value="doraemon.jpg">Doraemon</option>
+                <option value="two_minions.jpg">Two Minions</option>
+                <option value="countless_minions.jpeg">Countless Minions</option>
             </select>
         </div>
     </div>
